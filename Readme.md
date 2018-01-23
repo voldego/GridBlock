@@ -1,6 +1,6 @@
 ## 1- Simple Grids
 
-Block Grid is using a 6 columns system.
+Grid Block is using a 6 columns system.
 
  The `gc-x` mean a grid container with x columns : `gc-1 , gc-2 , gc-3 , gc-4 , gc-5 , gc-6` 
 
