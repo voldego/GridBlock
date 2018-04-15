@@ -1,0 +1,23 @@
+const Nightmare = require('nightmare')
+const nightmare = Nightmare({ show: true })
+
+nightmare
+  .goto('https://www.facebook.com/')
+  .type('#email', 'mizom6@gmail.com')
+  .type('#pass', 'mizom624153')
+  .click('#loginbutton')
+  .wait(5000)
+  .goto('https://www.facebook.com/find-friends/browser/')
+  .wait(5000)
+  .evaluate(function(){
+    var p = document.querySelectorAll('.addButton');
+    p.forEach(function(el){
+        el.click()
+    })
+    }
+   )
+   
+  
+  .catch(error => {
+    console.error('Search failed:', error)
+  })
